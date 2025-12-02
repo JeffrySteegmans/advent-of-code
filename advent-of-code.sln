@@ -4,13 +4,53 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. solution items", "00. s
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		README.md = README.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99. Inputs", "99. Inputs", "{3778FA47-EEFC-45D9-BED2-9E19621C1132}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inputs", "Inputs", "{3778FA47-EEFC-45D9-BED2-9E19621C1132}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E526CA28-1F84-4B50-AFF1-536241747703}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D8F1AB92-60BF-4C76-9CBB-0CF803CC3BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Runner", "src\AoC.Runner\AoC.Runner.csproj", "{D68486C4-43A5-461B-A5F9-82771C2F08BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{55E80B5D-656C-4932-92B0-600D0CAD7320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoc.2025", "src\Solutions\Aoc.2025\Aoc.2025.csproj", "{430A15FD-87EA-4EA7-954B-46D05FE5D186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoc.Common", "src\Aoc.Common\Aoc.Common.csproj", "{27EBC880-7193-426C-BDC4-B544BD67CB06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2025", "2025", "{AB09FDD1-37E4-4BC5-A9F6-46286E1F946A}"
+	ProjectSection(SolutionItems) = preProject
+		inputs\2025\day01.txt = inputs\2025\day01.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D68486C4-43A5-461B-A5F9-82771C2F08BF} = {E526CA28-1F84-4B50-AFF1-536241747703}
+		{55E80B5D-656C-4932-92B0-600D0CAD7320} = {E526CA28-1F84-4B50-AFF1-536241747703}
+		{430A15FD-87EA-4EA7-954B-46D05FE5D186} = {55E80B5D-656C-4932-92B0-600D0CAD7320}
+		{27EBC880-7193-426C-BDC4-B544BD67CB06} = {E526CA28-1F84-4B50-AFF1-536241747703}
+		{AB09FDD1-37E4-4BC5-A9F6-46286E1F946A} = {3778FA47-EEFC-45D9-BED2-9E19621C1132}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D68486C4-43A5-461B-A5F9-82771C2F08BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68486C4-43A5-461B-A5F9-82771C2F08BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68486C4-43A5-461B-A5F9-82771C2F08BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68486C4-43A5-461B-A5F9-82771C2F08BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430A15FD-87EA-4EA7-954B-46D05FE5D186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430A15FD-87EA-4EA7-954B-46D05FE5D186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430A15FD-87EA-4EA7-954B-46D05FE5D186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430A15FD-87EA-4EA7-954B-46D05FE5D186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27EBC880-7193-426C-BDC4-B544BD67CB06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EBC880-7193-426C-BDC4-B544BD67CB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EBC880-7193-426C-BDC4-B544BD67CB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EBC880-7193-426C-BDC4-B544BD67CB06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
