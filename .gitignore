@@ -416,3 +416,10 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Ignore Rider .idea folder
+.idea/
+
+# Inputs and local secrets
+inputs/**/day*.txt
+!inputs/**/.keep           # keep folders tracked
