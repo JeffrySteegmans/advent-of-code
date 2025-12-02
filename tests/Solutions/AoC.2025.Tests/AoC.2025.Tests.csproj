@@ -16,4 +16,9 @@
         <Using Include="Xunit"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\src\AoC.Common\AoC.Common.csproj" />
+      <ProjectReference Include="..\..\..\src\Solutions\AoC.2025\AoC.2025.csproj" />
+    </ItemGroup>
+
 </Project>
